@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hangman</h1>
+      <button class="reload material-icons">cached</button>
+    </header>
+    <h3>
+      Tip: The word is a known concept in Javascript and programming in general.
+    </h3>
+    <main>
+      <div class="gallows">
+        <img class="gallows-img" src="imgs/forca.png" />
+        <img class="head-img" src="imgs/cabeça.png" />
+        <img class="body-img" src="imgs/corpo.png" />
+        <img class="leg-l-img" src="imgs/perna_direita.png" />
+        <img class="leg-r-img" src="imgs/perna_esquerda.png" />
+        <img class="arm-r-img" src="imgs/braço_direito.png" />
+        <img class="arm-l-img" src="imgs/braço_esquerdo.png" />
+      </div>
+
+      <div class="word">
+        <div class="word-letters"></div>
+        <div class="word-dashes"></div>
+      </div>
+    </main>
+
+    <div class="letters">
+      <button class="letter">A</button>
+      <button class="letter">B</button>
+      <button class="letter">C</button>
+      <button class="letter">D</button>
+      <button class="letter">E</button>
+      <button class="letter">F</button>
+      <button class="letter">G</button>
+      <button class="letter">H</button>
+      <button class="letter">I</button>
+      <button class="letter">J</button>
+      <button class="letter">K</button>
+      <button class="letter">L</button>
+      <button class="letter">M</button>
+      <button class="letter">N</button>
+      <button class="letter">O</button>
+      <button class="letter">P</button>
+      <button class="letter">Q</button>
+      <button class="letter">R</button>
+      <button class="letter">S</button>
+      <button class="letter">T</button>
+      <button class="letter">U</button>
+      <button class="letter">W</button>
+      <button class="letter">V</button>
+      <button class="letter">X</button>
+      <button class="letter">Y</button>
+      <button class="letter">Z</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

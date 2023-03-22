@@ -1,0 +1,188 @@
+:root {
+  --primary: #658864;
+  --secondary: #ebebeb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: var(--secondary);
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 5rem;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: var(--secondary);
+}
+
+.reload {
+  background: none;
+  font-size: 64px;
+  font-weight: 300;
+  border: none;
+  color: var(--secondary);
+  cursor: pointer;
+  opacity: 90%;
+  transition: 0.4s;
+}
+
+.reload:hover {
+  opacity: 100%;
+  transform: 0.4s;
+  margin-left: 1rem;
+}
+
+.reload:active {
+  -o-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+  -moz-transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  transform: rotate(720deg);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallows {
+  display: grid;
+  grid-template-rows: 0 0 0 0 0 0;
+}
+
+.word {
+  display: grid;
+  grid-template-columns: 0 2;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.word-letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: -10%;
+  margin-left: -10%;
+  color: var(--secondary);
+}
+
+.word-dashes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dash-img {
+  height: auto;
+  max-width: 25%;
+}
+
+.word-letter {
+  display: flex;
+  margin-bottom: 10rem;
+  max-width: 25%;
+}
+
+.letters {
+  display: grid;
+  grid-template-columns: repeat(13, auto);
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.letters button {
+  background: none;
+  border: none;
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--secondary);
+  cursor: pointer;
+  opacity: 90%;
+  transition: 0.4s;
+  text-shadow: 1 1 rgba(0, 0, 0, 20%);
+}
+
+.letters button:hover {
+  opacity: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.letters button:active {
+  transform: 0.7s;
+  -o-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  -moz-transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.visible {
+  opacity: 100%;
+}
+
+.wrong-letter {
+  color: crimson;
+}
+
+.right-letter {
+  color: rgb(195, 238, 127);
+}
+
+/*Sizing for different screens*/
+@media (min-width: 256px) {
+  .letters {
+    grid-template-columns: repeat(6, auto);
+  }
+}
+
+@media (min-width: 768px) {
+  .letters {
+    grid-template-columns: repeat(6, auto);
+  }
+}
+
+@media (min-width: 1024px) {
+  .letters {
+    grid-template-columns: repeat(13, auto);
+  }
+}
