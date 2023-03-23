@@ -136,14 +136,14 @@ main {
   text-shadow: 1 1 rgba(0, 0, 0, 20%);
 }
 
-.letters button:hover {
+.hover:hover {
   opacity: 100%;
   margin-left: 1rem;
   margin-right: 1rem;
   color: rgb(255, 255, 255);
 }
 
-.letters button:active {
+.hover:active {
   transform: 0.7s;
   -o-transform: translateY(-25px);
   -ms-transform: translateY(-25px);
@@ -152,20 +152,12 @@ main {
   transform: translateY(-25px);
 }
 
-.hidden {
+.invisible {
   opacity: 0%;
 }
 
 .visible {
   opacity: 100%;
-}
-
-.wrong-letter {
-  color: crimson;
-}
-
-.right-letter {
-  color: rgb(195, 238, 127);
 }
 
 /*Sizing for different screens*/
